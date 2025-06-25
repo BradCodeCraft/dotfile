@@ -5,14 +5,14 @@ vim.o.number = true
 vim.o.relativenumber = true
 
 -- enable mouse mode
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 
 -- don't show the mode
 vim.o.showmode = false
 
 -- sync clipboard between os and neovim.
 vim.schedule(function()
-  vim.o.clipboard = 'unnamedplus'
+	vim.o.clipboard = "unnamedplus"
 end)
 
 -- enable break indent
@@ -26,7 +26,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- keep signcolumn on by default
-vim.o.signcolumn = 'yes'
+vim.o.signcolumn = "yes"
 
 -- decrease update time
 vim.o.updatetime = 250
@@ -39,7 +39,7 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 
 -- preview substitutions live, as you type!
-vim.o.inccommand = 'split'
+vim.o.inccommand = "split"
 
 -- show which line your cursor is on
 vim.o.cursorline = true
@@ -52,14 +52,14 @@ vim.o.scrolloff = 10
 -- see `:help 'confirm'`
 vim.o.confirm = true
 
--- set <tab> to be 4 character
-vim.o.tabstop = 4
+-- set <tab> to be 2 character
+vim.o.tabstop = 2
 
--- set indentation to be 4 spaces
-vim.o.shiftwidth = 4
+-- set indentation to be 2 spaces
+vim.o.shiftwidth = 2
 
 -- set number of spaces that a tab counts for while performing editing operations
-vim.o.softtabstop = 4
+vim.o.softtabstop = 2
 
 -- convert tabs to spaves
 vim.o.expandtab = true
