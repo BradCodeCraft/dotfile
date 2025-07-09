@@ -149,7 +149,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Exit menu
-set $Locker i3lock && sleep 1
+set $Locker i3lock -c 000000 && sleep 1
 
 set $mode_system System [l]ock, [e]xit, [s]uspend, [h]ibernate, [r]eboot, [S]hutdown
 mode "$mode_system" {
