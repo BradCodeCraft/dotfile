@@ -26,6 +26,13 @@ return {
 			},
 		})
 
+		local hipatterns = require("mini.hipatterns")
+		hipatterns.setup({
+			highlighters = {
+				hex_color = hipatterns.gen_highlighter.hex_color(),
+			},
+		})
+
 		-- Simple and easy statusline.
 		--  You could remove this setup call if you don't like it,
 		--  and try some other statusline plugin
@@ -44,9 +51,5 @@ return {
 		-- ... and there is more!
 		--  Check out: https://github.com/echasnovski/mini.nvim
 		--
-		local hipatterns = require("mini.hipatterns")
-		hipatterns.setup({
-			hex_color = hipatterns.gen_highlighter.hex_color(),
-		})
 	end,
 }
